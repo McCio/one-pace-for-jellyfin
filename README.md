@@ -21,7 +21,6 @@ This guide explains how to set up One Pace for Plex
 ## Requirements
 
 - Plex
-- XBMCnfoTVImporter
 - Python 3.7+ (only if running Linux/Mac)
 
 ## Install Instructions
@@ -144,28 +143,24 @@ This approach uses python to rename all your files, which is a bit more complex 
 
 [^1]: Inside 'exceptions.json' you can map any file name to a specific episode number. It looks in your specified season directory to see if any of the .mkv files have matching text in their filenames, then renames it as the corresponding episode number if found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
 
-### 5. Install XBMCnfoTVImporter
+### 5. Scan In Plex
 
-You need to install [XBMCnfoTVImporter](https://github.com/gboudreau/XBMCnfoTVImporter.bundle) for plex in order to scan in One Pace. Follow the instructions and install.
-
-### 6. Scan In Plex
-
-You need to swap to the XBMCnfoTVImporter agent in Plex to scan your new One Pace folder. 
+You need to swap to the Plex NFO Series agent in Plex to scan your new One Pace folder. 
 
 1. Open Plex
 2. Navigate to your anime library
 3. Click 'Manage Library' -> 'Edit...'
 4. Click on the 'Advanced' tab
 5. Click the 'Agent' dropdown box. (and note what you have set to currently so that you can change it back)
-6. Select the 'XBMCnfoTVImporter' option. (If this does not exist XBMCnfoTVImporter may not be installed correctly)
+6. Select the 'Plex NFO Series' option.
 7. Click "Save Changes"
 8. Click "Scan Library Files"
 9. One Pace should get scanned into your library
 10. Once it is complete, change your agent back to what you had originally!
-    
+
 Notes: 
 - This method will scan in One Pace without interfering with your existing shows.
-- Don't press "Refresh all metadata" in plex as this may mess up your other shows.
+- Don't press "Refresh all metadata" in Plex as this may mess up your other shows.
 
 ## Acknowledgements
 
