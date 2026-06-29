@@ -25,8 +25,8 @@ If you can, please test it with Plex and let me know if it works!
 
 ## Requirements
 
-- Plex (w/ XBMCnfoTVImporter) or Jellyfin
-- Python 3.7+
+- Plex
+- Python 3.7+ (only if running Linux/Mac)
 
 ## Install Instructions
 
@@ -55,9 +55,9 @@ Download all the One Pace episodes you wish to add and place them in their respe
 One Pace does not currently cover the entire series. Thus, you will need to add missing episodes to fill out your collection.
 
 Current missing episodes:
-- Season 35: 1021-1085
+- Season 35: 1029-1085
 
-See the [One Pace Episode Spreadsheet](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) for up-to-date information on what episodes are available. Check column Q to see which original One Piece episodes need to be added to your library.
+See the [One Pace Episode Guide](https://docs.google.com/spreadsheets/d/1HQRMJgu_zArp-sLnvFMDzOyjdsht87eFLECxMK858lA/) and [Episode Descriptions](https://docs.google.com/spreadsheets/d/1M0Aa2p5x7NioaH9-u8FyHq6rH3t5s6Sccs8GoC6pHAM/edit?gid=0#gid=0) spreadsheets for up-to-date information on what episodes are available. Check column Q to see which original One Piece episodes need to be added to your library.
 
 Place the missing episodes in their respective season folders.
 
@@ -124,29 +124,24 @@ This approach uses python to rename all your files, which is a bit more complex 
 
 [^1]: Inside 'exceptions.json' you can map any file name to a specific episode number. It looks in your specified season directory to see if any of the .mkv files have matching text in their filenames, then renames it as the corresponding episode number if found. If you have some strange episode naming, you may need to modify this json and add your episode filenames.
 
-### 5. (Plex ONLY) Install XBMCnfoTVImporter
+### 5. Scan In Plex
 
-You need to install [XBMCnfoTVImporter](https://github.com/gboudreau/XBMCnfoTVImporter.bundle) for plex in order to scan in One Pace. Follow the instructions and install.
-
-### 6. (Plex ONLY) Scan In Plex
-
-You need to swap to the XBMCnfoTVImporter agent in Plex to scan your new One Pace folder.
+You need to swap to the Plex NFO Series agent in Plex to scan your new One Pace folder. 
 
 1. Open Plex
 2. Navigate to your anime library
 3. Click 'Manage Library' -> 'Edit...'
 4. Click on the 'Advanced' tab
 5. Click the 'Agent' dropdown box. (and note what you have set to currently so that you can change it back)
-6. Select the 'XBMCnfoTVImporter' option. (If this does not exist XBMCnfoTVImporter may not be installed correctly)
+6. Select the 'Plex NFO Series' option.
 7. Click "Save Changes"
 8. Click "Scan Library Files"
 9. One Pace should get scanned into your library
 10. Once it is complete, change your agent back to what you had originally!
 
-Notes:
-
+Notes: 
 - This method will scan in One Pace without interfering with your existing shows.
-- Don't press "Refresh all metadata" in plex as this may mess up your other shows.
+- Don't press "Refresh all metadata" in Plex as this may mess up your other shows.
 
 ## Acknowledgements
 
